@@ -1,0 +1,54 @@
+# ============================================================================
+# .gitignore - Smart Backup Kernel-Space Utility
+# EAFIT - Sistemas Operativos (C2661-SI2004-5186)
+# ============================================================================
+
+# === ARCHIVOS COMPILADOS Y OBJETOS ===
+*.o                 # Archivos objeto
+*.so                # Librerías compartidas (Linux)
+*.a                 # Archivos estáticos (Linux)
+*.lib               # Librerías (Windows)
+*.dll               # Dinámicas (Windows)
+*.exe               # Ejecutables (Windows)
+*.out               # Ejecutables (Linux)
+
+# === EDITOR Y IDE ===
+.vscode/            # Visual Studio Code
+.idea/              # JetBrains IDEs
+*.swp               # Vim swap
+*.swo               # Vim swap
+*~                  # Emacs backup
+.DS_Store           # macOS
+Thumbs.db           # Windows Explorer
+
+# === HERRAMIENTAS DE COMPILACIÓN ===
+build/              # Directorio de compilación
+dist/               # Directorio de distribución
+*.gcda              # Coverage data
+*.gcno              # Coverage metadata
+CMakeFiles/         # CMake
+cmake_install.cmake # CMake install
+
+# === ARCHIVOS DE PRUEBA Y TEMPORALES ===
+test_*.bin          # Archivos binarios de prueba
+bench_*.bin*        # Archivos de benchmark
+*.tmp               # Archivos temporales
+*.log               # Logs
+.venv/              # Entorno virtual Python
+__pycache__/        # Cache Python
+
+# === ARCHIVOS DE SISTEMA ===
+.git/               # Git (no duplicar)
+.gitignore          # Este mismo archivo
+core                # Core dumps
+*.core              # Core dumps
+
+# === DIRECTORIOS DE PRUEBA (GENERADOS) ===
+test_backup*/       # Directorios de prueba
+src_test/           # Directorios de prueba origen
+dest_test/          # Directorios de prueba destino
+
+# === NO IGNORAR (IMPORTANTE) ===
+# !.gitkeep          # Markers para directorios vacíos
+# !reporte.pdf       # El PDF del análisis SÍ va en el repo
+# !readme.md         # La documentación SÍ va en el repo
