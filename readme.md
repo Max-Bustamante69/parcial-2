@@ -5,7 +5,7 @@
 **Proyecto:** Parcial 2 - Sistemas Operativos  
 **Universidad:** EAFIT  
 **Curso:** Sistemas Operativos - C2661-SI2004-5186  
-**Período:** 2026
+**Fecha:** 7 de Abril 2026
 
 ### 👥 Autores y Contribuciones
 
@@ -311,7 +311,7 @@ cmp /tmp/test.bin /tmp/backup.bin && echo "✓ Archivos idénticos"
 
 ## 🔍 Análisis Técnico Detallado
 
-### 1. Tamaño de Buffer: La Magia detrás del Rendimiento
+### 1. Tamaño de Buffer
 
 #### El Problema
 
@@ -420,36 +420,4 @@ Cuando un programa llama a una syscall:
 
 ---
 
-## ✅ Lista de Verificación para Calificación
 
-Según la rúbrica del proyecto:
-
-- ✅ Diseño de función (30%):
-  - ✅ Implementa `sys_smart_copy` con buffer de 4KB
-  - ✅ Manejo completo de errores
-  - ✅ Validación de punteros
-
-- ✅ Comparativa Syscall vs Library (20%):
-  - ✅ Explica importancia de buffering
-  - ✅ Compara `fread` vs `sys_smart_copy`
-  - ✅ Analiza concept de context switches
-
-- ✅ Manejo de Errores (15%):
-  - ✅ Gestiona archivo inexistente
-  - ✅ Gestiona falta de permisos
-  - ✅ Valida descriptores
-
-- ✅ Pruebas de Rendimiento (20%):
-  - ✅ Tabla comparativa de tiempos
-  - ✅ Diferentes tamaños de archivo
-  - ✅ Incluye variabilidad
-
-- ✅ Calidad de Código (15%):
-  - ✅ Código limpio y modular
-  - ✅ Comentarios detallados
-  - ✅ Estándares de nomenclatura
-
----
-
-**Última actualización:** Enero 2026  
-**Versión:** 1.0.0

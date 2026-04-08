@@ -33,7 +33,7 @@ int sys_smart_copy_file(const char *src_path, const char *dest_path, stats_copia
     int fd_dest = -1;     /* Descriptor de archivo destino */
     ssize_t bytes_leidos; /* Retorno de read() */
     ssize_t bytes_writtn; /* Retorno de write() */
-    char buffer[BUFFER_SIZE]; /* Buffer de 4096 bytes: ¡la magia! */
+    char buffer[BUFFER_SIZE]; /* Buffer de 4096 bytes: 
     struct stat st;
     int resultado = 0;
 
